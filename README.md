@@ -18,7 +18,7 @@ A powerful and interactive web-based calculator built with **HTML, CSS, and Java
 - HTML5
 - CSS3
 - JavaScript (ES6)
-- ExchangeRate-API for currency conversion
+- Go to ExchangeRate-API for currency conversion
 
 ## 🔐 API Key Security
 

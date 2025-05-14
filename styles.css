@@ -1,0 +1,267 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    transition: background 0.3s, color 0.3s;
+    padding: 20px;
+}
+
+.calculator-container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.calculator {
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.display input {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.buttons, .memory-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #bbb;
+}
+
+.operator {
+    background-color: #f39c12;
+    color: white;
+}
+
+.equal {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.memory-buttons {
+    margin-bottom: 10px;
+}
+
+.memory {
+    background-color: #3498db;
+    color: white;
+}
+
+#theme-toggle {
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode .calculator {
+    background: #333;
+    color: white;
+}
+
+.dark-mode .display input {
+    background: #444;
+    color: white;
+}
+
+.dark-mode .btn {
+    background-color: #666;
+    color: white;
+}
+
+.dark-mode .btn:hover {
+    background-color: #888;
+}
+
+.dark-mode #theme-toggle {
+    background-color: white;
+    color: black;
+}
+
+.converter {
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.converter input, .converter select, .converter button {
+    margin: 5px;
+    padding: 10px;
+    width: 90%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.converter button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.converter button:hover {
+    background-color: #27ae60;
+}
+
+/* Dark Mode */
+.dark-mode .converter {
+    background: #333;
+    color: white;
+}
+
+.dark-mode .converter input, .dark-mode .converter select {
+    background: #444;
+    color: white;
+    border: 1px solid #666;
+}
+
+.dark-mode .converter button {
+    background-color: #2ecc71;
+}
+
+.dark-mode .converter button:hover {
+    background-color: #27ae60;
+}
+
+.history-log {
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.history-log ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.history-log li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.history-log button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.history-log button:hover {
+    background-color: #c0392b;
+}
+
+/* Dark Mode */
+.dark-mode .history-log {
+    background: #333;
+    color: white;
+}
+
+.dark-mode .history-log li {
+    border-bottom: 1px solid #666;
+}
+
+/* BMI Converter */
+.converter {
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.converter input, .converter button {
+    margin: 5px;
+    padding: 10px;
+    width: 90%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.converter button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.converter button:hover {
+    background-color: #27ae60;
+}
+
+/* Dark Mode */
+.dark-mode .converter {
+    background: #333;
+    color: white;
+}
+
+.dark-mode .converter input {
+    background: #444;
+    color: white;
+    border: 1px solid #666;
+}
+
+.dark-mode .converter button {
+    background-color: #2ecc71;
+}
+
+.dark-mode .converter button:hover {
+    background-color: #27ae60;
+}

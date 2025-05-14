@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/5801163cbf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Ultimate Calculator</h1>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="calc-display" disabled>
+            </div>
+
+            <div class="memory-buttons">
+                <button class="btn memory" id="memory-clear">MC</button>
+                <button class="btn memory" id="memory-recall">MR</button>
+                <button class="btn memory" id="memory-add">M+</button>
+                <button class="btn memory" id="memory-subtract">M-</button>
+            </div>
+
+            <div class="buttons">
+                <button class="btn function" id="clear">C</button>
+                <button class="btn function" id="backspace"><i class="fas fa-backspace"></i></button>
+                <button class="btn function" id="percent">%</button>
+                <button class="btn operator" id="divide">/</button>
+
+                <button class="btn function" id="sqrt">√</button>
+                <button class="btn function" id="power">xʸ</button>
+                <button class="btn function" id="pi">π</button>
+                <button class="btn operator" id="multiply">*</button>
+
+                <button class="btn function" id="sin">sin</button>
+                <button class="btn function" id="cos">cos</button>
+                <button class="btn function" id="tan">tan</button>
+                <button class="btn operator" id="subtract">-</button>
+
+                <button class="btn number" id="seven">7</button>
+                <button class="btn number" id="eight">8</button>
+                <button class="btn number" id="nine">9</button>
+                <button class="btn operator" id="add">+</button>
+
+                <button class="btn number" id="four">4</button>
+                <button class="btn number" id="five">5</button>
+                <button class="btn number" id="six">6</button>
+                <button class="btn function" id="log">log</button>
+
+                <button class="btn number" id="one">1</button>
+                <button class="btn number" id="two">2</button>
+                <button class="btn number" id="three">3</button>
+                <button class="btn function" id="ln">ln</button>
+
+                <button class="btn number" id="zero">0</button>
+                <button class="btn number" id="decimal">.</button>
+                <button class="btn equal" id="equals">=</button>
+            </div>
+        </div>
+
+        <!-- Currency Converter -->
+        <div class="converter">
+            <h2>Currency Converter</h2>
+            <label for="currency-amount">Amount:</label>
+            <input type="number" id="currency-amount" placeholder="Enter amount">
+            
+            <label for="from-currency">From:</label>
+            <select id="from-currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="NGN">NGN</option>
+            </select>
+
+            <label for="to-currency">To:</label>
+            <select id="to-currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="NGN">NGN</option>
+            </select>
+
+            <button id="convert-currency">Convert</button>
+            <p id="currency-result">Converted Amount: <span>--</span></p>
+        </div>
+
+        <!-- History Log -->
+        <div class="history-log">
+            <h2>History Log</h2>
+            <button id="clear-history">Clear History</button>
+            <ul id="history-list"></ul>
+        </div>
+        
+        <!-- Unit Converter -->
+        <div class="converter">
+            <h2>Unit Converter</h2>
+            
+            <label for="unit-input">Value:</label>
+            <input type="number" id="unit-input" placeholder="Enter value">
+            
+            <label for="unit-type">Unit Type:</label>
+            <select id="unit-type">
+                <option value="length">Length (m ↔ cm ↔ in ↔ ft)</option>
+                <option value="weight">Weight (kg ↔ lbs)</option>
+                <option value="temperature">Temperature (°C ↔ °F ↔ K)</option>
+            </select>
+
+            <label for="from-unit">From:</label>
+            <select id="from-unit">
+                <option value="m">Meters</option>
+                <option value="cm">Centimeters</option>
+                <option value="in">Inches</option>
+                <option value="ft">Feet</option>
+                <option value="kg">Kilograms</option>
+                <option value="lbs">Pounds</option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+
+            <label for="to-unit">To:</label>
+            <select id="to-unit">
+                <option value="m">Meters</option>
+                <option value="cm">Centimeters</option>
+                <option value="in">Inches</option>
+                <option value="ft">Feet</option>
+                <option value="kg">Kilograms</option>
+                <option value="lbs">Pounds</option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+
+            <button id="convert-unit">Convert</button>
+            <p id="unit-result">Converted Value: <span>--</span></p>
+        </div>
+
+        <!-- BMI Converter -->
+        <div class="converter">
+            <h2>BMI Converter</h2>
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter weight in kg">
+            
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" placeholder="Enter height in cm">
+
+            <button id="calculate-bmi">Calculate BMI</button>
+            <p id="bmi-result">Your BMI: <span>--</span></p>
+            <p id="bmi-category">Category: <span>--</span></p>
+        </div>
+    </div>
+</body>
+</html>
